@@ -17,7 +17,7 @@ HERE = os.path.dirname(__file__)
 
 setuptools.setup(
     name='inotify_httpd',
-    version="0.1.2",
+    version="0.1.3",
     author='Tal Wrii',
     author_email='talwrii@gmail.com',
     description='',
