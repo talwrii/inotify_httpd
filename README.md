@@ -19,9 +19,11 @@ inotify_httpd /tmp/www
 # Installation
 
 ```
-pip install inotify_httpd # release version
+# release version
+pip install inotify_httpd
 
-pip install git+https://github.com/talwrii/inotify_httpd#egg=inotify_httpd # development version
+# latest development version
+pip install git+https://github.com/talwrii/inotify_httpd#egg=inotify_http
 ```
 
  # Caveats
