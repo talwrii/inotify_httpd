@@ -16,6 +16,14 @@ inotify_httpd /tmp/www
 
 ```
 
+# Installation
+
+```
+pip install inotify_httpd # release version
+
+pip install git+https://github.com/talwrii/inotify_httpd#egg=inotify_httpd # development version
+```
+
  # Caveats
 
 * Content is served by a JavaScript wrapper, so may not interact very well with tools like curl.
