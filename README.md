@@ -23,6 +23,7 @@ inotify_httpd /tmp/www
 * Only tested with *Firefox*.
 * The actions that cause refresh could be a lot more targeted: changing an unrelated but watched file may result in a browser refresh.
 
+* There are no automated tests of behaviour.
 
 # Alternatives and prior work
 
