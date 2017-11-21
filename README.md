@@ -4,6 +4,8 @@ Serve files over HTTP; immediately refresh browsers when the files change on dis
 
 This is achieved using  [Linux's inotify system calls](http://man7.org/linux/man-pages/man7/inotify.7.html), *JavaScript*, [WebSockets](https://www.w3.org/TR/websockets/), and an HTML [iframe](https://www.w3.org/wiki/HTML/Elements/iframe).
 
+This tool requires Python 3.
+
 # Usage
 
 ```
@@ -20,10 +22,10 @@ inotify_httpd /tmp/www
 
 ```
 # release version
-pip install inotify_httpd
+pip3 install inotify_httpd
 
 # latest development version
-pip install git+https://github.com/talwrii/inotify_httpd#egg=inotify_http
+pip3 install git+https://github.com/talwrii/inotify_httpd#egg=inotify_http
 ```
 
  # Caveats

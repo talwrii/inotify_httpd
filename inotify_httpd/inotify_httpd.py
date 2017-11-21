@@ -5,6 +5,11 @@ import os
 import sys
 import threading
 
+if sys.version_info[0] != 3:
+    # FileNotFoundError does not exist in python 2
+    raise Exception('Only works with python 3')
+
+
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 import pyinotify
@@ -23,7 +28,6 @@ def call_on_modify(func, files):
     wm = pyinotify.WatchManager()
     monitored_files = []
     files = [os.path.abspath(f) for f in files]
-
     class EventProcessor(pyinotify.ProcessEvent):
         def process_IN_MODIFY(self, event):
             LOGGER.debug('Modify event')
