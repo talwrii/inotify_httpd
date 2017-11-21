@@ -33,7 +33,5 @@ setuptools.setup(
         "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)"
     ],
     test_suite='nose.collector',
-    install_requires=['SimpleWebSocketServer', 'pyinotify'],
-    dependency_links=["git+ssh://git@github.com/dpallot/simple-websocket-server.git#egg=SimpleWebSocketServer"
-    ]
-)
+    install_requires=['SimpleWebSocketServerFork==0.1.3', 'pyinotify'],
+    )
