@@ -3,7 +3,7 @@ Serve files over HTTP; immediately refresh browsers when the files change on dis
 
 This is achieved using  [Linux's inotify system calls](http://man7.org/linux/man-pages/man7/inotify.7.html), *JavaScript*, [WebSockets](https://www.w3.org/TR/websockets/), and an HTML [iframe](https://www.w3.org/wiki/HTML/Elements/iframe).
 
-This tool requires Python 3 (but this can happily coexist with Python 2). Requires Linux (or a system with `inotify` system calls).
+This tool requires Python 3 (but can happily coexist with Python 2). Requires Linux (or a system with `inotify` system calls).
 
 # Usage
 ```
@@ -21,7 +21,6 @@ inotify_httpd /tmp/www
 # Ensure pip3 is install
 sudo apt-get install python3-pip
 
-
 # release version
 pip3 install inotify_httpd
 
@@ -31,7 +30,7 @@ pip3 install git+https://github.com/talwrii/inotify_httpd#egg=inotify_http
 
 # Caveats
 * Content is served by a JavaScript wrapper, so may not interact very well with tools like curl.
-* URLs are not updated due to the `iframe` wrapper
+* The browser's URLs are not updated when following links, due to the `iframe` wrapper
 * Only tested with *Firefox*.
 * The actions that cause refresh could be a lot more targeted: changing an unrelated but watched file may result in a browser refresh.
 
